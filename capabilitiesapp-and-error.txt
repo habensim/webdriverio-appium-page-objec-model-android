@@ -1,0 +1,35 @@
+
+// jika mengalami error silahkan lakukan perintah dibawah
+spec ./test/spec/sample.js” it returns the error “Error: “ts-node/esm/transpile-only ‘resolve’”
+
+npm i -D typescript ts-node
+
+
+// untuk Appium inspector (Capability) Android & ios
+/////APK Notepad//////
+{
+  "appPackage": "com.socialnmobile.dictapps.notepad.color.note",
+  "appActivity": "com.socialnmobile.colornote.activity.Main",
+  "noReset": true,
+  "platformName": "android",
+  "automationName": "UiAutomator2",
+  "newCommandTimeout": "3600"
+}
+/////APK ApiDemos//////
+{
+  "appPackage": "io.appium.android.apis",
+  "appActivity": "io.appium.android.apis.ApiDemos",
+  "noReset": true,
+  "platformName": "android",
+  "automationName": "UiAutomator2",
+  "newCommandTimeout": "3600"
+}
+
+/////APP UIKitCatalog.app//////
+{
+  "platformName": "ios",
+  "appium:plaformVersion": "15.0",
+  "automationName": "XCUITest",
+  "appium:app": "app/ios/UIKitCatalog.app", => location .app
+  "deviceName": "iPhone 12 Pro Max"
+}

@@ -28,7 +28,7 @@ exports.config = {
     specs: [
         // ToDo: define location for spec files here
         // './test/specs/**/android-native*.js'
-        './test/specs/android/delete-note-screen*.js'
+        './test/specs/**/ios*.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -56,15 +56,25 @@ exports.config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://saucelabs.com/platform/platform-configurator
     //
-    capabilities: [{
-        'appium:platformName': 'Android',
-        'appium:platformVersion': '12.0',
-        'appium:deviceName':'automation-v12',
-        'appium:automationName':'UIAutomator2',
-        ///Users/habensimanjuntak/Documents/QA/automation/myauto/mobile/webdriverio-appium-v8/app/android/ApiDemos-debug.apk
-        'appium:app':path.join(process.cwd(),'app/android/ColorNote+Notepad.apk'),
-        'appium:autoGrantPermissions': true
-    }],
+    capabilities: [
+        // {
+        //     'appium:platformName': 'Android',
+        //     'appium:platformVersion': '12.0',
+        //     'appium:deviceName':'automation-v12',
+        //     'appium:automationName':'UIAutomator2',
+        //     ///Users/habensimanjuntak/Documents/QA/automation/myauto/mobile/webdriverio-appium-v8/app/android/ApiDemos-debug.apk
+        //     'appium:app':path.join(process.cwd(),'app/android/ColorNote+Notepad.apk'),
+        //     'appium:autoGrantPermissions': true
+        // }
+        {
+            'appium:platformName': 'ios',
+            'appium:platformVersion': '15.5',
+            'appium:deviceName':'iPhone 12 Pro Max',
+            'appium:automationName':'XCUITest',
+            ///Users/habensimanjuntak/Documents/QA/automation/myauto/mobile/webdriverio-appium-v8/app/android/ApiDemos-debug.apk
+            'appium:app':path.join(process.cwd(),'./app/ios/UIKitCatalog.app'),
+        }
+    ],
     //
     // ===================
     // Test Configurations

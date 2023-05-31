@@ -1,5 +1,5 @@
-# webdriverio-appium-page-objec-model-android
-Webdriverio, Appium, Automation, Android
+# webdriverio-appium-page-objec-model-android-ios
+Webdriverio, Appium, Automation, Android & iOS
 
 Automation Test for app ApiDemos-debug.apk : 
 - startActivity to specific Android Activity
