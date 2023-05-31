@@ -1,0 +1,4 @@
+
+spec ./test/spec/sample.js” it returns the error “Error: “ts-node/esm/transpile-only ‘resolve’”
+
+npm i -D typescript ts-node
