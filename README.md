@@ -20,6 +20,9 @@ Automation Test for app ColorNote+Notepad.apk :
 - Delete a Note
 - Page Object Model (Screen Objects)
 
+Automation Test for app UIKitCatalog.app : 
+- find Elements ios
+
 How to run : 
 - git clone https://github.com/habensim/webdriverio-appium-page-objec-model-android.git
 - npm install
