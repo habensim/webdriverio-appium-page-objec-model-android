@@ -22,6 +22,14 @@ Automation Test for app ColorNote+Notepad.apk :
 
 Automation Test for app UIKitCatalog.app : 
 - find Elements ios
+- find by tag name
+- find element by accessibility id
+- find element by class chain
+- find element by predicate string
+- search field, clear, verify text empty
+
+iOS webdriver Agent
+https://github.com/facebookarchive/WebDriverAgent/wiki/Class-Chain-Queries-Construction-Rules
 
 How to run : 
 - git clone git@github.com:habensim/webdriverio-appium-page-object-model-android-ios.git

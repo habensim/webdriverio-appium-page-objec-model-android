@@ -33,3 +33,4 @@ npm i -D typescript ts-node
   "appium:app": "app/ios/UIKitCatalog.app", => location .app
   "deviceName": "iPhone 12 Pro Max"
 }
+
