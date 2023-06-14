@@ -27,6 +27,8 @@ Automation Test for app UIKitCatalog.app :
 - find element by class chain
 - find element by predicate string
 - search field, clear, verify text empty
+- Handle Alert
+- Scroll down, up, left, right
 
 iOS webdriver Agent
 https://github.com/facebookarchive/WebDriverAgent/wiki/Class-Chain-Queries-Construction-Rules
