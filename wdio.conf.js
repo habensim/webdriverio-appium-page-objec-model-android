@@ -28,7 +28,7 @@ exports.config = {
     specs: [
         // ToDo: define location for spec files here
         // './test/specs/**/android-native*.js'
-        './test/specs/ios/ios-native*.js'
+        './test/specs/ios/ios-todo*.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -72,7 +72,7 @@ exports.config = {
             'appium:deviceName':'iPhone 12 Pro Max',
             'appium:automationName':'XCUITest',
             ///Users/habensimanjuntak/Documents/QA/automation/myauto/mobile/webdriverio-appium-v8/app/android/ApiDemos-debug.apk
-            'appium:app':path.join(process.cwd(),'./app/ios/UIKitCatalog.app'),
+            'appium:app':path.join(process.cwd(),'app/ios/MVCTodo.app'),
         }
     ],
     //
