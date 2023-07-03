@@ -1,9 +1,27 @@
+const ItemScreen = require("../../screenobjects/ios/item.screen");
+const ListScreen = require("../../screenobjects/ios/list.screen");
+
+
 describe('Todo List', () => {
     it('Create Todo List', async() => {
-       await $('//*[@name="Create list"]').click(); 
-       await $('//*[@value="List Name"]').addValue("Melakukan Olahraga di pagi hari");
-       await $('~Create').click();
+       await ListScreen.createListBtn.click(); 
+       await ListScreen.listNameInput.addValue("Melakukan Olahraga di pagi hari");
+       await ListScreen.createBtn.click();
 
-       await expect(await $("~Melakukan Olahraga di pagi hari")).toBeExisting();
+       await expect(ListScreen.listNameField("Melakukan Olahraga di pagi hari")).toBeExisting();
+
+       // create Todo Item
+       await ListScreen.listNameField("Melakukan Olahraga di pagi hari").click();
+       await ItemScreen.createItem.click();
+       await ItemScreen.title.addValue("Jalan Pagi");
+       await ItemScreen.dueDate.click();
+       await ItemScreen.datePicker.click();
+       await ItemScreen.getByAccessibility("Monday, July 10").click();
+       await ItemScreen.secondWindow.click();
+       await ItemScreen.createBtn.click();
+
+       //assertion
+       await expect(await ItemScreen.getByAccessibility("Jalan Pagi")).toBeExisting();
+       await expect(await ItemScreen.getByAccessibility("Due July 10, 2023")).toBeExisting();
     });
 });

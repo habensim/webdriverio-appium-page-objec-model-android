@@ -68,7 +68,7 @@ exports.config = {
         // }
         {
             'appium:platformName': 'ios',
-            'appium:platformVersion': '15.5',
+            'appium:platformVersion': '14.5',
             'appium:deviceName':'iPhone 12 Pro Max',
             'appium:automationName':'XCUITest',
             ///Users/habensimanjuntak/Documents/QA/automation/myauto/mobile/webdriverio-appium-v8/app/android/ApiDemos-debug.apk

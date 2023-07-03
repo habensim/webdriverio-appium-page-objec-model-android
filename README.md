@@ -30,6 +30,14 @@ Automation Test for app UIKitCatalog.app :
 - Handle Alert
 - Scroll down, up, left, right
 
+Automation Test for app MVCTodo.app : 
+- Input text create todo
+- Handle second popup
+- Verify List Todos
+- Handle Datepicker
+- Page Object Model 
+- Handle function get by Accessibility id
+
 iOS webdriver Agent
 https://github.com/facebookarchive/WebDriverAgent/wiki/Class-Chain-Queries-Construction-Rules
 
