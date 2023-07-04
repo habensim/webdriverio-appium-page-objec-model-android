@@ -19,6 +19,7 @@ Automation Test for app ColorNote+Notepad.apk :
 - Add a Note
 - Delete a Note
 - Page Object Model (Screen Objects)
+- implement hooks
 
 Automation Test for app UIKitCatalog.app : 
 - find Elements ios
@@ -37,6 +38,7 @@ Automation Test for app MVCTodo.app :
 - Handle Datepicker
 - Page Object Model 
 - Handle function get by Accessibility id
+- implement hooks
 
 iOS webdriver Agent
 https://github.com/facebookarchive/WebDriverAgent/wiki/Class-Chain-Queries-Construction-Rules
@@ -45,7 +47,8 @@ How to run :
 - git clone git@github.com:habensim/webdriverio-appium-page-object-model-android-ios.git
 - npm install
 - running emulator
-- npx wdio
+- npx wdio config/wdio.android.conf.js -> for testing android
+- npx wdio config/wdio.ios.conf.js -> for testing ios
 
 # setup jsconfig, babel & eslint
 - jsconfig for Autocompletion webdriverio

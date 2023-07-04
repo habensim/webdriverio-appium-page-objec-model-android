@@ -7,8 +7,6 @@ exports.config = {
     // ====================
     // WebdriverIO supports running e2e tests as well as unit and component tests.
     runner: 'local',
-    
-    port: 4723,
     //
     // ==================
     // Specify Test Files
@@ -25,11 +23,6 @@ exports.config = {
     // then the current working directory is where your `package.json` resides, so `wdio`
     // will be called from there.
     //
-    specs: [
-        // ToDo: define location for spec files here
-        // './test/specs/**/android-native*.js'
-        './test/specs/ios/ios-todo*.js'
-    ],
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -56,25 +49,7 @@ exports.config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://saucelabs.com/platform/platform-configurator
     //
-    capabilities: [
-        // {
-        //     'appium:platformName': 'Android',
-        //     'appium:platformVersion': '12.0',
-        //     'appium:deviceName':'automation-v12',
-        //     'appium:automationName':'UIAutomator2',
-        //     ///Users/habensimanjuntak/Documents/QA/automation/myauto/mobile/webdriverio-appium-v8/app/android/ApiDemos-debug.apk
-        //     'appium:app':path.join(process.cwd(),'app/android/ColorNote+Notepad.apk'),
-        //     'appium:autoGrantPermissions': true
-        // }
-        {
-            'appium:platformName': 'ios',
-            'appium:platformVersion': '14.5',
-            'appium:deviceName':'iPhone 12 Pro Max',
-            'appium:automationName':'XCUITest',
-            ///Users/habensimanjuntak/Documents/QA/automation/myauto/mobile/webdriverio-appium-v8/app/android/ApiDemos-debug.apk
-            'appium:app':path.join(process.cwd(),'app/ios/MVCTodo.app'),
-        }
-    ],
+    
     //
     // ===================
     // Test Configurations
