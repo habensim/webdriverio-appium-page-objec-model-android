@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "types": [
+            "node",
+            "@wdio/globals/types",
+            "@wdio/mocha-framework"
+        ],
+        "module": "commonjs"
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

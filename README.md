@@ -46,3 +46,10 @@ How to run :
 - npm install
 - running emulator
 - npx wdio
+
+# setup jsconfig, babel & eslint
+jsconfig for Autocompletion webdriverio
+babel for transpiler syntax unsupported
+eslint for statically analyzes your code to quickly find problems
+npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/register
+npm install eslint-plugin-wdio --save-dev
