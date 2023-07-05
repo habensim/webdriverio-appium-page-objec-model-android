@@ -1,4 +1,4 @@
-# webdriverio-appium-page-object-model-android-ios
+# webdriverio-appium-page-object-model-android-ios and integration Browserstack
 Webdriverio, Appium, Automation, Android & iOS
 
 Automation Test for app ApiDemos-debug.apk : 
@@ -20,6 +20,7 @@ Automation Test for app ColorNote+Notepad.apk :
 - Delete a Note
 - Page Object Model (Screen Objects)
 - implement hooks
+- integeration with Browserstack
 
 Automation Test for app UIKitCatalog.app : 
 - find Elements ios
@@ -58,3 +59,14 @@ How to run :
 run this
 - npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/register
 - npm install eslint-plugin-wdio --save-dev
+
+# Browserstack Documentation
+- https://webdriver.io/docs/browserstack-service/
+- https://www.browserstack.com/app-automate/capabilities 
+- install browserstack service npm install @wdio/browserstack-service --save-dev
+- running using npx wdio config/wdio.android.bs.js
+
+# dotenv
+- https://www.npmjs.com/package/dotenv
+- install dotenv npm install dotenv --save
+- create .env in your root folder set BROWSERSTACK_USER=userbrowserstack | BROWSERSTACK_KEY=keybrowserstack

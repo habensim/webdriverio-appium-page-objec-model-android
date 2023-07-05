@@ -6,6 +6,7 @@
     "@babel/preset-env": "^7.22.5",
     "@babel/register": "^7.22.5",
     "@wdio/appium-service": "^8.6.1",
+    "@wdio/browserstack-service": "^8.11.2",
     "@wdio/cli": "^8.6.1",
     "@wdio/local-runner": "^8.6.1",
     "@wdio/mocha-framework": "^8.6.1",
@@ -19,5 +20,8 @@
   },
   "scripts": {
     "wdio": "wdio run ./wdio.conf.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
   }
 }
