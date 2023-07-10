@@ -70,3 +70,6 @@ run this
 - https://www.npmjs.com/package/dotenv
 - install dotenv npm install dotenv --save
 - create .env in your root folder set BROWSERSTACK_USER=userbrowserstack | BROWSERSTACK_KEY=keybrowserstack
+
+# github Action
+- https://webdriver.io/docs/githubactions/ 
