@@ -1,5 +1,5 @@
 # webdriverio-appium-page-object-model-android-ios and integration Browserstack
-Webdriverio, Appium, Automation, Android & iOS
+Webdriverio, Appium, Automation, Android & iOS with Github Action and Browserstack
 
 Automation Test for app ApiDemos-debug.apk : 
 - startActivity to specific Android Activity
@@ -71,5 +71,9 @@ run this
 - install dotenv npm install dotenv --save
 - create .env in your root folder set BROWSERSTACK_USER=userbrowserstack | BROWSERSTACK_KEY=keybrowserstack
 
-# github Action
+# github Action CI/CD integration with Browserstack as a Emulator
 - https://webdriver.io/docs/githubactions/ 
+- setup ci.yaml in directory .github/workflows/ci.yaml
+- settings Secrets/Actions in github https://github.com/Azure/actions-workflow-samples/blob/master/assets/create-secrets-for-GitHub-workflows.md set BS_USER(username Browserstack) & BS_KEY(Access Key Browserstack)
+- setting env in ci.yaml for BROWSERSTACK_USER: ${{ secrets.BS_USER }} & BROWSERSTACK_KEY: ${{ secrets.BS_KEY }}
+- setting run: npx wdio config/wdio.android.bs.conf.js --spec test/specs/android/add-note-screen.spec.js
